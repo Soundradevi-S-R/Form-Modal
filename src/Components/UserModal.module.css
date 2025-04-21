@@ -1,0 +1,28 @@
+/* .inputtext{
+    width: 40vw;
+    height: 5vh;
+    font-size: 14pt;
+    color:darkslategray;
+    border-radius: 5px;
+    padding:10px;   
+    justify-items:safe;    
+}
+.Modal{   
+    position:absolute;   
+    display: flex;
+    flex-direction: column;
+    top:5%;
+    left:30%;
+    z-index: 999;
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;      
+    width: 90%; 
+    height: 90%;   
+    font-family: "Open Sans";   
+   
+} */
