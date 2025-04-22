@@ -67,7 +67,10 @@ const validateDOB =(dob) =>{
 
 const handleCloseForm = (event) =>{
 
-  closeModal(true);
+  if (event.target.classList.contains('modal')) {
+    closeModal(true);
+  }
+ 
 }
 
   //jsx rendered
@@ -81,14 +84,14 @@ const handleCloseForm = (event) =>{
                             
                             <form onSubmit={handleSubmit}>
                                 <label><h3>Username:</h3></label>
-                                <input className='inputtext' id='username' required  ></input>
+                                <input className='inputtext' type='text' id='username'name='username' required  ></input>
                                 <label><h3>Email Address:</h3> </label>
-                                <input  className='inputtext' id='email' type='email' name='email' required></input>
+                                <input  className='inputtext' type='email' id='email'  name='email' required></input>
                                 <label><h3>Phone number:</h3></label>
-                                <input  className='inputtext' id='phone' type='te1' name='phone' required ></input>
-                                <label><h3>Date of Birth:</h3></label>
+                                <input  className='inputtext'  type='te1' id='phone' name='phone' required ></input>
+                                <label><h3>Date of Birth:</h3></label>                                
 
-                                <input  className='inputtext' id='dob' type="date"  required></input><br/><br/>
+                                <input  className='inputtext' id='dob' type="date" name='date'  required></input><br/><br/>
 
                                 <button className="submit-button" type="submit" >submit</button>
                             </form>
