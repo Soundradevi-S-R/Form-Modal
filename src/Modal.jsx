@@ -64,11 +64,17 @@ const validateDOB =(dob) =>{
 
   }
 
+
+const handleCloseForm = (event) =>{
+
+  closeModal(true);
+}
+
   //jsx rendered
 
     return(    
     
-        <div className='modal'>
+        <div className='modal' onClick={handleCloseForm}>
 
             <div className='modal-content'  >
                             <h2>Fill details</h2>
